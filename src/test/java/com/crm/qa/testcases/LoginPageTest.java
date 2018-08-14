@@ -44,12 +44,12 @@ public class LoginPageTest extends TestBase{
 	public void loginTest(String username,String password){
 		homepage=loginpage.Login(username, password);
 		//homepage=loginpage.Login(prop.getProperty("username"), prop.getProperty("password"));
-		 Assert.assertEquals(false, driver.getTitle().contains("CRMPRO"));
+		 Assert.assertEquals(true, driver.getTitle().contains("CRMPRO"));
 	}
 	
 	@DataProvider(name="Data")
 	public Object[][] passdata(){
-	Excelreadutil v=new Excelreadutil("D:\\Selenium\\SeleniumPrograms\\HybridFramework\\src\\main\\java\\com\\crm\\qa\\Data\\Testdata.xlsx");
+	Excelreadutil v=new Excelreadutil("D:\\Selenium\\android\\HybridFramework\\HybridFramework\\src\\main\\java\\com\\crm\\qa\\Data\\Testdata.xlsx");
 	//System.out.println(v.getdata(0, 0, 0));
 	int rows=v.getRowcount(0);
 	Object[][] data=new Object[rows][2];

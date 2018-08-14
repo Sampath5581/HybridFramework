@@ -20,7 +20,7 @@ public class TestBase {
 	
 	try{
 		prop=new Properties();
-		FileInputStream fs=new FileInputStream("D:\\Selenium\\SeleniumPrograms\\HybridFramework\\src\\main\\java\\com\\crm\\qa\\configuration\\config.properties");
+		FileInputStream fs=new FileInputStream("D:\\Selenium\\android\\HybridFramework\\HybridFramework\\src\\main\\java\\com\\crm\\qa\\configuration\\config.properties");
 		prop.load(fs);
 	}
 	catch(Exception e)
