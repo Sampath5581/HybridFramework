@@ -7,11 +7,10 @@ public class TestUtil {
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=20;
 	// Main Method for util test case
-	public static void main(String[] args) throws IOException {
-		System.out.println("hi------");
+	
 
 		// Test 1
 
 	}
 	
-}
+
